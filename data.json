@@ -1,0 +1,39 @@
+{
+  "receipts": [
+    {
+      "date": "2024-05-20",
+      "name": "마트24 (편의점)",
+      "amount": 17630,
+      "cat": "식비",
+      "card": "-",
+      "id": "r0_마트24 (편의점)_17630"
+    },
+    {
+      "date": "2012-01-02",
+      "name": "Home plus",
+      "amount": 32200,
+      "cat": "식비",
+      "card": "-",
+      "id": "r1_Home plus_32200"
+    },
+    {
+      "date": "2022-07-02",
+      "name": "년동)",
+      "amount": 141000,
+      "cat": "식비",
+      "card": "****-7914",
+      "id": "r2_년동)_141000"
+    }
+  ],
+  "checks": {
+    "kb-calshare": true
+  },
+  "minutes": {
+    "team": "기획팀 주간회의",
+    "format": "sum",
+    "mask": true,
+    "showSrc": true,
+    "at": "2026-11-21T04:46:33.032Z"
+  },
+  "updatedAt": "2026-11-21T06:06:41.331Z"
+}
