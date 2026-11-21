@@ -1337,7 +1337,7 @@ async function downloadMinutes() {
   const SKIP = {SCRIPT:1, STYLE:1, TEXTAREA:1, NOSCRIPT:1};
   const fix = s => s.replace(RE, maskName);
   function walk(root){
-    if (root.nodeType === 3) { if (RE.test(root.nodeValue)) { RE.lastIndex = 0; root.nodeValue = fix(root.nodeValue); } RE.lastIndex = 0; return; }
+    if (root.nodeType === 3) { if (RE.test(root.nodeValue)) { RE.lastIndex = 0; const masked = fix(root.nodeValue); if (root.nodeValue !== masked) root.nodeValue = masked; } RE.lastIndex = 0; return; }
     if (root.nodeType !== 1 || SKIP[root.tagName]) return;
     for (const a of ['title','placeholder','aria-label']) { const v = root.getAttribute && root.getAttribute(a); if (v && v !== fix(v)) root.setAttribute(a, fix(v)); }
     for (const c of root.childNodes) walk(c);
